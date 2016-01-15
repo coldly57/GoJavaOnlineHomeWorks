@@ -1,0 +1,12 @@
+package module6.task1file;
+
+public class AudioFile extends File {
+
+    private String currentString = "AudioFile";
+
+    @Override
+    public String getCurrentString(){
+        return this.currentString;
+    }
+
+}
