@@ -16,6 +16,8 @@ public class Rosebush extends Rose {
         }
     }
 
+    // Methods getRosesList and setRosesList seem to be useless in current project (Boat Anchor anti-pattern). Refactored solution - delete these part of code for the project.
+
     public ArrayList<Rose> getRosesList() {
 
         return this.rosesList;
