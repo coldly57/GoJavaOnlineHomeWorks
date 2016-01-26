@@ -2,7 +2,6 @@ package module10;
 
 import module9.EncodeDecode;
 
-import javax.xml.crypto.Data;
 import java.io.*;
 
 public class ReadWriteEncodeDecodeImpl implements ReadWriteEncodeDecode {
