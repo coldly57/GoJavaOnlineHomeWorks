@@ -2,7 +2,7 @@ package module5.task3matrix;
 
 public class MatrixCalculator {
 
-    public static int[][] arraysAddition(int[][] array1, int[][] array2) {
+    public static int[][] matrixAdd(int[][] array1, int[][] array2) {
 
         if (array1.length != array2.length || array1[0].length != array2[0].length) {
             System.out.println("Size of matrices must be equal!");
@@ -20,7 +20,7 @@ public class MatrixCalculator {
         return resultArray;
     }
 
-    public static int[][] arraysSubtraction(int[][] minuendArray, int[][] subtrahendArray) {
+    public static int[][] matrixSub(int[][] minuendArray, int[][] subtrahendArray) {
 
         if (minuendArray.length != subtrahendArray.length || minuendArray[0].length != subtrahendArray[0].length) {
             System.out.println("Size of matrices must be equal!");
@@ -38,7 +38,7 @@ public class MatrixCalculator {
         return resultArray;
     }
 
-    public static int[][] arraysMultiplication(int[][] multiplicandArray, int[][] multiplierArray) {
+    public static int[][] matrixMult(int[][] multiplicandArray, int[][] multiplierArray) {
 
         if (multiplicandArray.length != multiplierArray.length || multiplicandArray[0].length != multiplierArray[0].length) {
             System.out.println("Size of matrices must be equal!");
@@ -60,7 +60,7 @@ public class MatrixCalculator {
         return resultArray;
     }
 
-    public static int[][] arrayTranspose(int[][] array) {
+    public static int[][] matrixTranspose(int[][] array) {
 
         int[][] resultArray = new int[array[0].length][array.length];
 
@@ -81,7 +81,7 @@ public class MatrixCalculator {
                 {0, 1, 7, 5, 3}
         };
 
-        int[][] resultArray = MatrixCalculator.arraysAddition(array, array);
+        int[][] resultArray = MatrixCalculator.matrixAdd(array, array);
 
         if (resultArray != null) {
 
@@ -97,7 +97,7 @@ public class MatrixCalculator {
 
         }
 
-        int[][] resultArray2 = MatrixCalculator.arraysSubtraction(array, array);
+        int[][] resultArray2 = MatrixCalculator.matrixSub(array, array);
 
         if (resultArray2 != null) {
 
@@ -113,7 +113,7 @@ public class MatrixCalculator {
         }
 
 
-        int[][] resultArray3 = MatrixCalculator.arraysMultiplication(array, array);
+        int[][] resultArray3 = MatrixCalculator.matrixMult(array, array);
 
         if (resultArray3 != null) {
 
@@ -128,7 +128,7 @@ public class MatrixCalculator {
 
         }
 
-        int[][] resultArray4 = MatrixCalculator.arrayTranspose(array);
+        int[][] resultArray4 = MatrixCalculator.matrixTranspose(array);
 
         for (int[] singleArray : resultArray4) {
             for (int cell : singleArray) {

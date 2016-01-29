@@ -5,7 +5,7 @@ public class EncodeDecode {
     private String decodedText;
     private String capitalLettersAlphabet;
     private String smallLettersAlphabet;
-    private int encodeShift = 2;
+    private int encodeShift = 0;
 
     public EncodeDecode(int encodeShift){
 
