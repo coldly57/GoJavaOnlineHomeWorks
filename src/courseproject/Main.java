@@ -80,13 +80,13 @@ public class Main {
             System.out.println();
         }
 
-        for (double s : matrixConstructor.getArray()){
+        for (double s : matrixConstructor.getMatrixIdentifier()){
             System.out.print(s + " ");
         }
 
         System.out.println();
 
-        GaussMethod gaussMethod = new GaussMethod(matrixConstructor.getMatrix(), matrixConstructor.getArray());
+        GaussMethod gaussMethod = new GaussMethod(matrixConstructor.getMatrix(), matrixConstructor.getMatrixIdentifier());
         gaussMethod.calculateGauss();
 
         new Main().printResults(gaussMethod.getResults());

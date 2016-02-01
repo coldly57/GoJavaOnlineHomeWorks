@@ -2,7 +2,7 @@ package courseproject;
 
 public class MatrixConstructor {
     private double[][] matrix = null;
-    private double[] array = null;
+    private double[] matrixIdentifier = null;
 
     public void setValueToMatrix(int numberOfVariables, int row, int index, double value){
         if (this.matrix == null){
@@ -12,17 +12,17 @@ public class MatrixConstructor {
     }
 
     public void setValueToArray(int numberOfVariables, int index, double value){
-        if (this.array == null){
-            this.array = new double[numberOfVariables];
+        if (this.matrixIdentifier == null){
+            this.matrixIdentifier = new double[numberOfVariables];
         }
-        this.array[index] = value;
+        this.matrixIdentifier[index] = value;
     }
 
     public double[][] getMatrix() {
         return this.matrix;
     }
 
-    public double[] getArray() {
-        return array;
+    public double[] getMatrixIdentifier() {
+        return matrixIdentifier;
     }
 }
