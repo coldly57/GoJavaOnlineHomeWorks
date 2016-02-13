@@ -1,9 +1,9 @@
 package practice;
 
-public class Test3 {
+public class AverageNumber {
 
     public static void main(String[] args) {
-        System.out.println(new Test3().average(10, -20));
+        System.out.println(new AverageNumber().average(-2147483648, -2));
     }
 
     public int average(int a, int b) {
@@ -13,9 +13,10 @@ public class Test3 {
         }
 
         if (a < 0 || b < 0){
-
-            return (a + b) / 2;
+            long sum = (long)a + b;
+            return (int) (sum / 2);
         }
+
         return (a + b) >>> 1;
     }
 }
